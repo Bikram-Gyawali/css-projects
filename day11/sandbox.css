@@ -1,0 +1,16 @@
+/* MAKING STICKY FOOTER */
+html,body{
+    margin: 0;
+    height: 100%;
+}
+.page-content{
+    min-height: 100%;
+    margin-bottom: -120px;
+}
+.page-content::after{
+    display: block;
+    content: '';
+}
+footer .page-content::after{
+    height: 120px;
+}

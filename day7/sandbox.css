@@ -1,0 +1,75 @@
+/* image manupulation using css effects */
+img{
+    height: 500px;
+    width: 500px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.8s ease;
+}
+img:hover{
+    cursor: crosshair;
+}
+
+.first {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.first:hover{
+ -webkit-filter: invert(0);
+    filter: invert(0);
+
+}
+.second{
+    -webkit-filter: blur(2px);
+    filter: blur(2px); 
+    /* transform: scaleX(1); */
+}
+.second:hover{
+    -webkit-filter: blur(0px);
+    filter: blur(0px); 
+    /* transform: scaleX(-1); */
+}
+.third{
+    -webkit-filter: blur(2px);
+    filter: blur(2px); 
+    transform: scaleX(1);
+}
+.third:hover{
+    -webkit-filter: blur(0px);
+    filter: blur(0px); 
+    transform: scaleX(-1);
+}
+.fourth{
+    -webkit-filter: sepia(1);
+    filter: sepia(1); 
+    transform: scaley(1);
+}
+.fourth:hover{
+    -webkit-filter: sepia(0);
+    filter: sepia(0); 
+    transform: scaleY(-1);
+}
+.text{
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .container:hover .overlay {
+    width: 100%;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }

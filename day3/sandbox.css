@@ -1,0 +1,24 @@
+.clip-image-1{
+    clip-path: circle(50% at 50% 50%); 
+    /* start to play with the percentage of clip path
+        ::..>>there is also a clip path shape maker
+         website search for it in google */
+    height: 500px;
+    width: 500px;
+}
+.clip-image-2{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);    height: 500px;
+    width: 500px;
+}
+.clip-image-3{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    height: 500px;
+    width: 500px;
+}
+.clip-image-4{
+    /* clip-path: polygon(0% 0%, 0% 100%, 69% 100%, 53% 12%, 82% 13%, 75% 75%, 67% 86%, 63% 100%, 100% 100%, 100% 0%); */
+    height: 500px;
+    width: 500px;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+/* lots of website for clippinig cropping website remember this bro hari bahadur ihihihihi  */

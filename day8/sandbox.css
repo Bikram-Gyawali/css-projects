@@ -1,0 +1,75 @@
+
+/* MODERN LAYOUT #1 */
+.layout1 article{
+width: 60%;
+float: left;
+
+}
+.layout1 aside{
+    float: right;
+    width: 40%;
+}
+.layout1 footer{
+    clear: both;
+}
+
+/* MODERN LAYOUT #2  */
+
+.layout2 header .logo{
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+.layout2 header nav{
+    width: 78%;
+    float: right;
+}
+.layout2 header::after{
+    display: table;
+    content: "";
+    clear: both;
+
+}
+.layout2 article{
+    width: 50%;
+    float: left;
+    margin: 2%;
+}
+.layout2  .sidenav{
+    width: 23%;
+    float: left;
+}
+.layout2  .sidebar{
+    width: 23%;
+    float: right;
+}
+.layout2 footer{
+    clear: both;
+}
+/*  MODERN LAYOUT #3 */
+.layout3 header .logo{
+    width: 20%;
+    float: right;
+}
+.layout3 header nav{
+    float: left;
+    width: 78%;
+}
+.layout3 header::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.layout3 article{
+    float: left;
+    width: 32%;
+    margin: 0% 2% 0% 0%;
+}
+.layout3 article:last-child{
+    margin: 0%;
+}
+.layout3 .articles::after{
+    display: table;
+    content: "";
+    clear: both;
+}
