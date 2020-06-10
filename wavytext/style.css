@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: rgb(14, 13, 13);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#wavy {
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(243, 236, 236, 1));
+    /* box-reflect: below -12px linear-gradient( rgba(243, 236, 236, 1)); */
+}
+
+#wavy span {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1em;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: animate 2s ease-in infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(10px);
+    }
+    80% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+#led {
+    position: relative;
+    display: table-cell;
+    /* letter-spacing: 1em; */
+    color: rgb(31, 31, 31);
+    font-size: 60px;
+    top: 100px;
+    text-transform: uppercase;
+    background: #000;
+    animation: textlight 2s linear infinite;
+    font-family: cursive;
+}
+
+@keyframes textlight {
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        box-shadow: 0 0 10px #003bff, 0 0 10px #003bff, 0 0 20px #003bff, 0 0 40px #003bff, 0 0 80px #003bff, 0 0 120px #003bff, 0 0 200px #003bff, 0 0 300px #003bff, 0 0 400px #003bff;
+    }
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        box-shadow: none;
+    }
+}
+
+#led:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#led:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+#led:nth-child(3) {
+    animation-delay: 1s;
+}
+
+#led:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+#led:nth-child(5) {
+    animation-delay: 2s;
+}
+
+#led:nth-child(6) {
+    animation-delay: 2.5s;
+}
